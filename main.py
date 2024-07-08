@@ -107,22 +107,11 @@ def get_data():
                 'timestamp': data.timestamp.isoformat(),
                 'device': data.device,
                 'power_value': data.power_value,
-                'power_unit': data.power_unit,
-                'power_accuracy': data.power_accuracy,
                 'current_value': data.current_value,
-                'current_unit': data.current_unit,
-                'current_accuracy': data.current_accuracy,
                 'apparent_power_value': data.apparent_power_value,
-                'apparent_power_unit': data.apparent_power_unit,
-                'apparent_power_accuracy': data.apparent_power_accuracy,
                 'voltage_value': data.voltage_value,
-                'voltage_unit': data.voltage_unit,
-                'voltage_accuracy': data.voltage_accuracy,
                 'power_factor_value': data.power_factor_value,
-                'power_factor_accuracy': data.power_factor_accuracy,
                 'energy_value': data.energy_value,
-                'energy_unit': data.energy_unit,
-                'energy_accuracy': data.energy_accuracy
             }
             result.append(data_dict)
 
