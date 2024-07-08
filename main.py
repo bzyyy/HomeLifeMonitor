@@ -53,7 +53,7 @@ def test_connection():
     except Exception as e:
         return jsonify({'message': 'Connection to the database failed!', 'error': str(e)}), 500
 
-@app.route('/postData', methods=['POST'])
+@app.route('/testData', methods=['POST'])
 def receive_data():
     if not request.is_json:
         return jsonify({'message': 'Request body must be JSON'}), 400
@@ -141,7 +141,7 @@ required_topics = [
     '/sonoff/power_factor',
     '/sonoff/energy'
 ]
-@app.route('/testPost', methods=['POST'])
+@app.route('/postData', methods=['POST'])
 def consolidate_data():
     global received_data
     if not request.is_json:
